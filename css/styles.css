@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 30px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  text-transform: uppercase;
+}
+
+.hero {
+  background-image: url(../img/img2.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.hero-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/*.hero-buttons {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}*/
+
+.hero-buttons :first-child {
+  background-color: #0a3046;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: none;
+  margin-right: 20px;
+}
+
+.hero-buttons :last-child {
+  background-color: transparent;
+  padding: 6px 20px;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-width: 4px;
+  border-color: white;
+}
+
+.feature {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 2rem;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 7rem 10rem;
+  row-gap: 3rem;
+  align-items: center;
+}
+
+.feature img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+.feature-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+}
+
+.feature-two {
+  background-color: #f5f5f5;
+}
+
+.feature-text button {
+  background-color: #0a3046;
+  font-size: 0.5rem;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  width: fit-content;
+}
+
+.feature-text h2 {
+  font-size: 2rem;
+}
