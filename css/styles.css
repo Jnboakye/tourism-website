@@ -14,20 +14,32 @@
   width: 100%;
   top: 0;
   left: 0;
+  border-bottom: solid rgb(167, 167, 167) 0.5px;
+}
 
+.logo {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 1000;
+  color: #0a3046;
+  font-size: 1.2rem;
 }
 
 .nav-right {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
+  color: grey;
 }
 
 .nav-links {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
+}
+
+.search-bar {
+  color: #0a3046;
 }
 
 .hero {
@@ -72,6 +84,9 @@
   text-transform: uppercase;
   border: none;
   margin-right: 20px;
+  border: solid;
+  border-radius: 30px;
+  border-color: #0a3046;
 }
 
 .hero-buttons :last-child {
@@ -81,6 +96,8 @@
   font-size: 1.2rem;
   text-transform: uppercase;
   border-width: 4px;
+  border: solid;
+  border-radius: 30px;
   border-color: white;
 }
 
@@ -94,6 +111,7 @@
   padding: 7rem 10rem;
   row-gap: 3rem;
   align-items: center;
+  height: 100vh;
 }
 
 .feature img {
@@ -115,13 +133,68 @@
 
 .feature-text button {
   background-color: #0a3046;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   border: none;
-  padding: 10px 20px;
+  padding: 17px 25px;
   color: white;
   width: fit-content;
+  border-radius: 30px;
 }
 
 .feature-text h2 {
   font-size: 2rem;
 }
+
+.section-four {
+  background-image: url(../img/img5.jpg);
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.section-four-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+  row-gap: 20px;
+  height: 44vh;
+  position: relative;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.38);
+}
+
+.section-four-overlay h1 {
+  font-size: 4rem;
+}
+
+..section-four-overlay p {
+  align-content: center;
+}
+
+
+.section-four-overlay button {
+  background-color: #0a3046;
+  padding: 20px 50px;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+
+/*
+.section-five {}
+
+.section-five-background {
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat
+}
+  */
